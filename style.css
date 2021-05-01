@@ -1,0 +1,140 @@
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
+  --paragraph: hsla(0, 0%, 100%, 0.75);
+  --gray: hsl(0, 0%, 95%);
+  --Lexend: "Lexend Deca", sans-serif;
+  --Big: "Big Shoulders Display", "san serif";
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@font-face {
+  font-family: "Deca";
+  src: url("fonts/LexendDeca-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BigShoulders";
+  src: url("fonts/BigShouldersDisplay-Regular.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 2em;
+}
+
+.flex {
+  display: flex;
+  align-self: center;
+  width: 80%;
+  padding: 3em;
+}
+
+section {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2em;
+  color: var(--gray);
+  font-family: "BigShoulders", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans";
+}
+
+img {
+  max-width: 4em;
+}
+
+.one {
+  background-color: var(--orange);
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.two {
+  background-color: var(--cyan);
+}
+
+.three {
+  background-color: var(--dark-cyan);
+  border-bottom-right-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-left-radius: 0;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: var(--paragraph);
+  width: 80%;
+  margin-bottom: 12em;
+  font-family: "Deca", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans";
+}
+
+button {
+  color: var(--gray);
+  border-radius: 20em;
+  padding: 1.2em;
+  font-weight: 400;
+  width: 80%;
+  margin-top: auto;
+}
+
+.one button {
+  color: var(--orange);
+  border: var(--orange);
+}
+
+.two button {
+  color: var(--cyan);
+  border: var(--cyan);
+}
+
+.three button {
+  color: var(--dark-cyan);
+  border: var(--dark-cyan);
+}
+
+/*mobile screen size*/
+@media only screen and (max-width: 600px) {
+  .main_img {
+    width: 80px;
+  }
+  .flex {
+    display: block;
+    margin-top: 2em;
+  }
+
+  .main img {
+    width: 100% !important;
+    margin-left: 2rem;
+  }
+
+  /* .section {
+    margin: 2em auto;
+    text-align: center;
+    width: 100%;
+  }*/
+  section#column.one {
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 0;
+  }
+
+  section#column.three {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1em;
+  }
+}
