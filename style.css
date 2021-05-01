@@ -123,11 +123,6 @@ button {
     margin-left: 2rem;
   }
 
-  /* .section {
-    margin: 2em auto;
-    text-align: center;
-    width: 100%;
-  }*/
   section#column.one {
     border-top-right-radius: 1em;
     border-bottom-left-radius: 0;
@@ -136,5 +131,13 @@ button {
   section#column.three {
     border-top-right-radius: 0;
     border-bottom-left-radius: 1em;
+  }
+  button {
+    color: var(--gray);
+    border-radius: 20em;
+    padding: 1.2em;
+    font-weight: 400;
+    width: 80%;
+    margin-top: auto;
   }
 }
