@@ -125,12 +125,12 @@ button {
     margin-left: 2rem;
   }
 
-  section#column.one {
+  section #column .one {
     border-top-right-radius: 1em;
     border-bottom-left-radius: 0;
   }
 
-  section#column.three {
+  section #column .three {
     border-top-right-radius: 0;
     border-bottom-left-radius: 1em;
   }
